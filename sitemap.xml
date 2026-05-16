@@ -2,12 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Stüdyo ana sayfası -->
+  <!-- Studio homepage -->
   <url>
     <loc>https://krersnstudio.com/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/"/>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,11 +17,12 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/"/>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Yanık tanıtım sayfası -->
+  <!-- Yanik landing page -->
   <url>
     <loc>https://krersnstudio.com/games/yanik/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/"/>
@@ -38,7 +40,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Yanık gizlilik politikası -->
+  <!-- Yanik privacy policy -->
   <url>
     <loc>https://krersnstudio.com/games/yanik/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/privacy.html"/>
@@ -58,7 +60,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Yanık kullanım şartları -->
+  <!-- Yanik terms -->
   <url>
     <loc>https://krersnstudio.com/games/yanik/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/terms.html"/>
@@ -78,7 +80,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Hesap silme (ortak) -->
+  <!-- Shared account deletion -->
   <url>
     <loc>https://krersnstudio.com/account-deletion.html</loc>
     <changefreq>yearly</changefreq>
