@@ -3,241 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yanık Kağıt Oyunu Çevrimdışı</title>
-<meta name="description" content="Yanık Kağıt Oyunu Çevrimdışı — geleneksel Turk Okeyi varyantlarini sunan, internet baglantisi gerektirmeyen mobil kart oyunu.">
-<style>
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 24px;
-    line-height: 1.6;
-    color: #222;
-    background: #fff;
-  }
-  header {
-    text-align: center;
-    padding: 32px 16px 24px;
-    border-bottom: 2px solid #0f2d1a;
-    margin-bottom: 32px;
-  }
-  h1 {
-    color: #0f2d1a;
-    font-size: 32px;
-    margin: 0 0 8px;
-  }
-  .subtitle {
-    color: #555;
-    font-size: 18px;
-    margin: 0 0 16px;
-  }
-  .badge {
-    display: inline-block;
-    background: #0f2d1a;
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: 600;
-    margin: 4px;
-  }
-  h2 {
-    color: #0f2d1a;
-    margin-top: 36px;
-    font-size: 22px;
-  }
-  h3 {
-    color: #0f2d1a;
-    margin-top: 24px;
-    font-size: 18px;
-  }
-  a { color: #0f2d1a; }
-  ul { padding-left: 24px; }
-  li { margin-bottom: 6px; }
-  .legal-links {
-    background: #e8f5e9;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 24px 0;
-    text-align: center;
-  }
-  .legal-links a {
-    display: inline-block;
-    background: #0f2d1a;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 6px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .legal-links a:hover { background: #1a4a2e; }
-  .info-box {
-    background: #f5f5f5;
-    border-left: 4px solid #0f2d1a;
-    padding: 12px 16px;
-    margin: 16px 0;
-    border-radius: 4px;
-  }
-  .uyari {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
-    padding: 12px 16px;
-    margin: 16px 0;
-    border-radius: 4px;
-  }
-  .iletisim {
-    background: #e8f5e9;
-    padding: 16px;
-    border-radius: 8px;
-    margin-top: 24px;
-  }
-  footer {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid #ddd;
-    text-align: center;
-    color: #666;
-    font-size: 14px;
-  }
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
-    margin: 16px 0;
-  }
-  .feature {
-    background: #f9f9f9;
-    padding: 16px;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-  }
-  .feature-title {
-    font-weight: 700;
-    color: #0f2d1a;
-    margin-bottom: 6px;
-  }
-</style>
+<meta name="theme-color" content="#08091a">
+
+<title>krersn Studio — Bağımsız Kart Oyunları Stüdyosu</title>
+<meta name="description" content="krersn Studio, geleneksel Türk kart oyunlarını modern bir teknik özenle hayata geçiren bağımsız bir oyun stüdyosudur. Yanık, Yunan ve daha fazlası.">
+
+<!-- SEO / İndeksleme — açık beyan -->
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://krersnstudio.com/">
+
+<!-- Dil alternatifleri -->
+<link rel="alternate" hreflang="tr" href="https://krersnstudio.com/">
+<link rel="alternate" hreflang="en" href="https://krersnstudio.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="krersn Studio — Bağımsız Kart Oyunları Stüdyosu">
+<meta property="og:description" content="Geleneksel Türk kart oyunları, modern teknik özenle. Yanık, Yunan ve daha fazlası.">
+<meta property="og:url" content="https://krersnstudio.com/">
+<meta property="og:site_name" content="krersn Studio">
+
+<!-- Fontlar -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/style.css">
+
+<!-- Yapılandırılmış veri -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "krersn Studio",
+  "url": "https://krersnstudio.com/",
+  "email": "krtulay@gmail.com",
+  "description": "Geleneksel Türk kart oyunlarını modern teknik özenle hayata geçiren bağımsız oyun stüdyosu."
+}
+</script>
 </head>
+
 <body>
 
-<header>
-  <h1>Yanık Kağıt Oyunu Çevrimdışı</h1>
-  <p class="subtitle">Türk Okeyi varyantları — çevrimdışı mobil kart oyunu</p>
-  <div>
-    <span class="badge">📱 Android</span>
-    <span class="badge">🌐 Çevrimdışı</span>
-    <span class="badge">🆓 Ücretsiz</span>
-    <span class="badge">🔞 18+</span>
+<header class="top-bar">
+  <div class="top-bar-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">k.</span>
+      <span>krersn <span class="brand-text-muted">studio</span></span>
+    </a>
+    <nav class="nav-right" aria-label="Dil seçimi">
+      <div class="lang-switch">
+        <a href="/" class="active" aria-current="page">TR</a>
+        <a href="/en/" hreflang="en">EN</a>
+      </div>
+    </nav>
   </div>
 </header>
 
-<section>
-  <h2>Uygulama Hakkında</h2>
-  <p><strong>Yanık Kağıt Oyunu Çevrimdışı</strong>, geleneksel Türk Okeyi'nin <strong>Yanık</strong> ve <strong>Yunan</strong> varyantlarını mobil cihazınızda oynamanızı sağlayan, internet bağlantısı gerektirmeyen tek oyunculu bir kart oyunudur. Yapay zeka destekli rakiplerle ister sakin bir oyun, ister rekabetçi bir maç oynayabilirsiniz.</p>
+<main>
 
-  <p>Uygulama tamamen <strong>çevrimdışı</strong> çalışır — verileriniz cihazınızda saklanır, sunuculara gönderilmez. Reklamlar isteğe bağlıdır ve yalnızca kullanıcı izni ile gösterilir.</p>
-</section>
-
-<section>
-  <h2>Özellikler</h2>
-  <div class="features">
-    <div class="feature">
-      <div class="feature-title">🎴 İki Klasik Varyant</div>
-      <p>Yanık ve Yunan modları — geleneksel Türk Okeyi kuralları</p>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-eyebrow">Bağımsız oyun stüdyosu · İstanbul</div>
+      <h1>Geleneksel kart oyunları,<br><span class="gold">modern özenle.</span></h1>
+      <p class="hero-sub">krersn Studio, Türk kart oyunu kültürünü güncel mobil deneyime taşıyan bağımsız bir geliştirici stüdyosudur.</p>
+      <div class="hero-ornament">♠ ♥ ♦ ♣</div>
     </div>
-    <div class="feature">
-      <div class="feature-title">🤖 Akıllı Botlar</div>
-      <p>Üç farklı kişilikte yapay zeka rakipler: agresif, dengeli ve garantici</p>
+  </section>
+
+  <section id="oyunlar">
+    <div class="wrap">
+      <div class="section-label">Yapımlar</div>
+      <h2 class="section-title">Oyunlar</h2>
+      <p class="section-lede">Her oyun, geleneksel kuralları koruyarak akıcı bir mobil oturum sağlamak üzere sıfırdan tasarlanır.</p>
+
+      <div class="games-grid">
+
+        <a class="game-card" href="/games/yanik/">
+          <div class="game-meta">
+            <span class="game-num">Oyun 01</span>
+            <span class="game-status">Yayında · Android</span>
+          </div>
+          <h3>Yanık Kağıt Oyunu</h3>
+          <p class="game-desc">Türk Okeyi'nin <em>Yanık</em> ve <em>Yunan</em> varyantları. Üç farklı kişilikte yapay zekâ rakiplerle çevrimdışı, tek oyunculu deneyim.</p>
+          <div class="game-tags">
+            <span class="game-tag">Çevrimdışı</span>
+            <span class="game-tag">Tek Oyunculu</span>
+            <span class="game-tag">18+</span>
+            <span class="game-tag">Türkçe</span>
+          </div>
+          <span class="game-arrow">İncele →</span>
+        </a>
+
+        <div class="game-card coming">
+          <div class="game-meta">
+            <span class="game-num">Oyun 02</span>
+            <span class="game-status coming">Yakında</span>
+          </div>
+          <h3>Yanık Online</h3>
+          <p class="game-desc">Aynı geleneksel kuralların, arkadaşlarınızla ve gerçek rakiplerle oynanabilen çevrimiçi sürümü. Sıra şu an geliştirmede.</p>
+          <div class="game-tags">
+            <span class="game-tag">Çevrimiçi</span>
+            <span class="game-tag">Çok Oyunculu</span>
+            <span class="game-tag">Yakında</span>
+          </div>
+          <span class="game-arrow" style="color: var(--text-faint);">— Geliştirme aşamasında</span>
+        </div>
+
+      </div>
     </div>
-    <div class="feature">
-      <div class="feature-title">📡 Tamamen Çevrimdışı</div>
-      <p>İnternet bağlantısı gerekmez — istediğiniz yerde oynayın</p>
+  </section>
+
+  <section id="hakkimizda">
+    <div class="wrap">
+      <div class="section-label">Stüdyo</div>
+      <h2 class="section-title">Hakkımızda</h2>
+
+      <div class="about-grid">
+        <aside class="info-card">
+          <div class="info-card-row">
+            <span class="info-card-key">Stüdyo</span>
+            <span class="info-card-val">krersn Studio</span>
+          </div>
+          <div class="info-card-row">
+            <span class="info-card-key">Konum</span>
+            <span class="info-card-val">İstanbul, Türkiye</span>
+          </div>
+          <div class="info-card-row">
+            <span class="info-card-key">E-posta</span>
+            <span class="info-card-val"><a href="mailto:krtulay@gmail.com">krtulay@gmail.com</a></span>
+          </div>
+          <div class="info-card-row">
+            <span class="info-card-key">Web</span>
+            <span class="info-card-val">krersnstudio.com</span>
+          </div>
+          <div class="info-card-row">
+            <span class="info-card-key">Kuruluş</span>
+            <span class="info-card-val">2026</span>
+          </div>
+        </aside>
+
+        <div class="about-body">
+          <p><strong>krersn Studio</strong>, bağımsız bir oyun geliştirici stüdyosudur. Temel ilgi alanımız, geleneksel Türk kart oyunlarının modern mobil cihazlarda zarif ve akıcı bir biçimde deneyimlenmesidir.</p>
+          <p>Yapımlarımız tamamen çevrimdışı çalışır; oyuncu verisi yalnızca cihazda saklanır. Reklamlar isteğe bağlıdır ve yalnızca kullanıcı izniyle gösterilir. Uygulama içi satın alma yoktur — sanal çiplerin parasal değeri bulunmaz.</p>
+          <p>Her oyunun kendi <a href="/games/yanik/privacy.html">gizlilik politikası</a> ve <a href="/games/yanik/terms.html">kullanım şartları</a> ayrı olarak yayımlanır. Veri toplama, üçüncü taraf hizmetler ve yaş kısıtlamaları her oyun için bağımsız olarak belgelenir.</p>
+        </div>
+      </div>
     </div>
-    <div class="feature">
-      <div class="feature-title">🎓 Acemi Modu</div>
-      <p>İlk 100 oyunda kademeli olarak zorlaşan eğitici deneyim</p>
-    </div>
-    <div class="feature">
-      <div class="feature-title">🏆 Başarımlar ve Liderlik</div>
-      <p>Google Play Oyun Hizmetleri ile ilerlemenizi takip edin</p>
-    </div>
-    <div class="feature">
-      <div class="feature-title">💾 Otomatik Kayıt</div>
-      <p>Oyun ilerlemeniz cihazınızda güvenle saklanır</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2>Google Hesabı ile Bağlantı</h2>
-  <p>Uygulama, isteğe bağlı olarak <strong>Google Play Oyun Hizmetleri (Google Play Games Services)</strong> ile entegre çalışır. Bu özellik şunları sağlar:</p>
-
-  <ul>
-    <li><strong>Oyuncu kimliği:</strong> Liderlik tablosunda görünmek için Google hesabınızdaki takma adınız kullanılır</li>
-    <li><strong>Başarımlar:</strong> Kazandığınız başarımlar Google hesabınızla senkronize edilir</li>
-    <li><strong>Liderlik tablosu:</strong> Yüksek skorlarınız Google Play Oyun Hizmetleri liderlik tablosuna gönderilir</li>
-  </ul>
-
-  <div class="info-box">
-    <strong>Hangi verileri istiyoruz:</strong> Yalnızca <em>games_lite</em> kapsamı — yani Google Play Oyun Hizmetleri'nin standart başarım ve liderlik tablosu işlevleri. E-postanız, kişileriniz veya başka kişisel verileriniz <strong>istenmez ve toplanmaz</strong>.
-  </div>
-
-  <p>Google hesabı ile giriş <strong>tamamen isteğe bağlıdır</strong>. Giriş yapmadan da oyunun tüm özellikleri kullanılabilir; bu durumda yalnızca başarım ve liderlik tablosu senkronizasyonu devre dışı kalır.</p>
-</section>
-
-<section>
-  <div class="uyari">
-    <strong>⚠️ Yaş Kısıtlaması:</strong> Bu uygulama yalnızca <strong>18 yaş ve üzeri</strong> kullanıcılara yöneliktir. Uygulama, kumar mekaniklerini simüle eden oyun ögeleri (sanal çip, bahis) içerir. Uygulamada gerçek para kullanılmaz; sanal çiplerin hiçbir parasal değeri yoktur ve takas edilemez.
-  </div>
-</section>
-
-<section>
-  <h2>Hukuki Belgeler</h2>
-  <p>Uygulamayı kullanmadan önce lütfen aşağıdaki belgeleri okuyun:</p>
-
-  <div class="legal-links">
-    <a href="privacy-policy.html">📄 Gizlilik Politikası</a>
-    <a href="terms-of-service.html">📋 Kullanım Şartları</a>
-  </div>
-
-  <p style="text-align:center;font-size:14px;color:#666;">Belgelerimiz hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıkça belirtir.</p>
-</section>
-
-<section>
-  <h2>Geliştirici</h2>
-  <div class="iletisim">
-    <p><strong>Hizmet Sağlayıcı:</strong> krersn Studio<br>
-    <strong>Uygulama:</strong> Yanık Kağıt Oyunu Çevrimdışı<br>
-    <strong>İletişim:</strong> <a href="mailto:krtulay@gmail.com">krtulay@gmail.com</a><br>
-    <strong>Web:</strong> <a href="https://krersnstudio.com/">https://krersnstudio.com/</a></p>
-  </div>
-</section>
-
-<section>
-  <h2>Sıkça Sorulan Sorular</h2>
-
-  <h3>İnternet bağlantısı gerekiyor mu?</h3>
-  <p>Hayır. Uygulama tamamen çevrimdışı çalışır. Yalnızca isteğe bağlı reklam izleme ve Google Play Oyun Hizmetleri senkronizasyonu için bağlantı kullanılır.</p>
-
-  <h3>Uygulama gerçek para kullanıyor mu?</h3>
-  <p>Hayır. Oyundaki sanal çiplerin hiçbir parasal değeri yoktur, satın alınamaz ve takas edilemez. Uygulama tamamen ücretsizdir.</p>
-
-  <h3>Verilerim güvende mi?</h3>
-  <p>Oyun verileriniz (çip miktarı, ilerleme, ayarlar) yalnızca cihazınızda saklanır. Sunuculara gönderilmez. Detaylar için <a href="privacy-policy.html">Gizlilik Politikası</a>'na bakın.</p>
-
-  <h3>Hangi cihazlarda çalışır?</h3>
-  <p>Android 8.0 (API 24) ve üzeri sürümlerde çalışır. Modern Android cihazların büyük çoğunluğu desteklenir.</p>
-</section>
+</main>
 
 <footer>
-  <p>© 2026 krersn Studio · Tüm hakları saklıdır.</p>
-  <p>
-    <a href="privacy-policy.html">Gizlilik Politikası</a> ·
-    <a href="terms-of-service.html">Kullanım Şartları</a> ·
-    <a href="mailto:krtulay@gmail.com">İletişim</a>
-  </p>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>© 2026 krersn Studio · Tüm hakları saklıdır.</div>
+      <div class="footer-links">
+        <a href="/games/yanik/privacy.html">Gizlilik</a>
+        <a href="/games/yanik/terms.html">Şartlar</a>
+        <a href="/account-deletion.html">Hesap Silme</a>
+        <a href="mailto:krtulay@gmail.com">İletişim</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 </body>

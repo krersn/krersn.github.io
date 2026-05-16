@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Stüdyo ana sayfası -->
+  <url>
+    <loc>https://krersnstudio.com/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Yanık tanıtım sayfası -->
+  <url>
+    <loc>https://krersnstudio.com/games/yanik/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/games/yanik/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Yanık gizlilik politikası -->
+  <url>
+    <loc>https://krersnstudio.com/games/yanik/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik/privacy.html"/>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/games/yanik/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik/privacy.html"/>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Yanık kullanım şartları -->
+  <url>
+    <loc>https://krersnstudio.com/games/yanik/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik/terms.html"/>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/games/yanik/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik/terms.html"/>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Hesap silme (ortak) -->
+  <url>
+    <loc>https://krersnstudio.com/account-deletion.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
