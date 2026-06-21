@@ -80,6 +80,66 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Yanik Online landing page -->
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Yanik Online privacy policy -->
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/privacy.html"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/privacy.html"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Yanik Online terms -->
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/terms.html"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/terms.html"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Shared account deletion -->
   <url>
     <loc>https://krersnstudio.com/account-deletion.html</loc>
