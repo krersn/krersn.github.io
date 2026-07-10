@@ -21,6 +21,11 @@
 <meta property="og:description" content="The Yanik and Yunan variants of Turkish Okey — an online mobile card game with real players.">
 <meta property="og:url" content="https://krersnstudio.com/games/yanik-online/en/">
 <meta property="og:site_name" content="krersn Studio">
+<meta property="og:image" content="https://krersnstudio.com/assets/img/games/yanik-online-icon.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://krersnstudio.com/assets/img/games/yanik-online-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,10 +56,55 @@
   .faq-q { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--gold-bright); margin-bottom: 8px; display: flex; gap: 12px; align-items: baseline; }
   .faq-q::before { content: 'Q'; font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; color: var(--gold); border: 1px solid var(--gold-line); border-radius: 50%; width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .faq-a { font-size: 16px; color: var(--text); line-height: 1.65; padding-left: 34px; }
+
+  /* ── YANIK ONLINE THEME: dark green felt + gold (matches app icon) ── */
+  body.yanik-theme {
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(201,168,76,.10), transparent 60%),
+      radial-gradient(ellipse 1200px 800px at 50% 0%, #163a22 0%, #0f2d1a 38%, #081b10 72%, #050e09 100%);
+  }
+  body.yanik-theme .hero {
+    position: relative;
+    text-align: center;
+    padding-top: 56px;
+    overflow: hidden;
+  }
+  body.yanik-theme .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(45deg, rgba(201,168,76,.035) 25%, transparent 25%, transparent 75%, rgba(201,168,76,.035) 75%),
+      linear-gradient(45deg, rgba(201,168,76,.035) 25%, transparent 25%, transparent 75%, rgba(201,168,76,.035) 75%);
+    background-size: 64px 64px;
+    background-position: 0 0, 32px 32px;
+    pointer-events: none;
+    opacity: .5;
+  }
+  body.yanik-theme .hero .wrap { position: relative; z-index: 1; }
+  .hero-logo {
+    width: 168px; height: 168px;
+    margin: 0 auto 22px;
+    border-radius: 34px;
+    box-shadow:
+      0 0 0 1px rgba(201,168,76,.5),
+      0 0 40px rgba(201,168,76,.35),
+      0 18px 40px rgba(0,0,0,.55);
+    animation: yanikGlow 3.2s ease-in-out infinite;
+  }
+  .hero-logo img { width: 100%; height: 100%; border-radius: 34px; display: block; }
+  @keyframes yanikGlow {
+    0%, 100% { box-shadow: 0 0 0 1px rgba(201,168,76,.5), 0 0 40px rgba(201,168,76,.30), 0 18px 40px rgba(0,0,0,.55); }
+    50%      { box-shadow: 0 0 0 1px rgba(232,201,106,.7), 0 0 62px rgba(232,201,106,.5), 0 18px 40px rgba(0,0,0,.55); }
+  }
+  body.yanik-theme .hero-sub, body.yanik-theme .hero-ornament { margin-left: auto; margin-right: auto; }
+  body.yanik-theme .hero-sub { max-width: 640px; }
+  body.yanik-theme .hero-actions { justify-content: center; display: flex; flex-wrap: wrap; gap: 14px; }
+  body.yanik-theme .game-hero-media { display: flex; justify-content: center; }
+  body.yanik-theme h1 { text-shadow: 0 2px 24px rgba(201,168,76,.25); }
 </style>
 </head>
 
-<body>
+<body class="yanik-theme">
 
 <header class="top-bar">
   <div class="top-bar-inner">
@@ -75,6 +125,7 @@
 
   <section class="hero">
     <div class="wrap">
+      <div class="hero-logo"><img src="/assets/img/games/yanik-online-icon.png" alt="Yanık Online logo"></div>
       <div class="hero-eyebrow">Game 02 · Online · Android</div>
       <h1>Yanik <span class="gold">Online</span><br>Card Game</h1>
       <p class="hero-sub">The <em>Yanik</em> and <em>Yunan</em> variants of Turkish Okey — play online with real players, add friends, chat, and gift chips.</p>
@@ -82,12 +133,6 @@
       <div class="hero-actions">
         <a class="button-link" href="https://oyun.krersnstudio.com/" target="_blank" rel="noopener noreferrer">🌐 Play Now in Browser</a>
         <a class="button-link secondary" href="https://play.google.com/store/apps/details?id=com.yanik.online&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
-      </div>
-      <div class="game-hero-media">
-        <a class="app-icon-showcase" href="https://play.google.com/store/apps/details?id=com.yanik.online&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
-          <img src="/assets/img/games/yanik-icon.png" alt="Yanik Online app icon">
-          <span>Google Play</span>
-        </a>
       </div>
     </div>
   </section>
