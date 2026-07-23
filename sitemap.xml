@@ -140,9 +140,30 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Shared account deletion -->
+  <!-- Data deletion — Yanık Kağıt Oyunu Çevrimdışı -->
   <url>
     <loc>https://krersnstudio.com/account-deletion.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Account & data deletion — Yanık Online Kart Oyunu -->
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/account-deletion.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/account-deletion.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/account-deletion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/account-deletion.html"/>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://krersnstudio.com/games/yanik-online/en/account-deletion.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://krersnstudio.com/games/yanik-online/account-deletion.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krersnstudio.com/games/yanik-online/en/account-deletion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krersnstudio.com/games/yanik-online/account-deletion.html"/>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
