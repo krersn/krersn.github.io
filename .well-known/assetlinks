@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.krersn.yanik",
+      "sha256_cert_fingerprints": [
+        "4A:03:D8:43:A2:A8:AF:DA:72:D4:15:D8:03:05:D7:8F:0A:15:3F:99:B1:F7:7E:99:9B:DD:02:1D:54:4A:AB:A0"
+      ]
+    }
+  }
+]
