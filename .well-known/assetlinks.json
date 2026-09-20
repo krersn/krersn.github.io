@@ -6,9 +6,9 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.krersn.yanik",
+      "package_name": "com.yanik.online",
       "sha256_cert_fingerprints": [
-        "4A:03:D8:43:A2:A8:AF:DA:72:D4:15:D8:03:05:D7:8F:0A:15:3F:99:B1:F7:7E:99:9B:DD:02:1D:54:4A:AB:A0"
+        "22:0E:60:91:8C:34:6B:CB:0C:19:FF:16:3C:EC:71:6B:6B:54:42:0A:43:F7:0B:96:93:A6:D3:9E:DE:01:C5:B5"
       ]
     }
   }
