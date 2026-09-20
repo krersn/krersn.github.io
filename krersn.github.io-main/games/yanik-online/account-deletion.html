@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hesap ve Veri Silme — Yanık Online Kart Oyunu | Krersn Studio</title>
+<meta name="description" content="Yanık Online Kart Oyunu (Krersn Studio) hesap ve veri silme talebi sayfası.">
+<style>
+  :root{ --gold:#e8c96a; --gold2:#c9a84c; --bg:#0a1f14; --card:rgba(255,255,255,.04); }
+  *{box-sizing:border-box}
+  body{margin:0;padding:0;background:radial-gradient(120% 70% at 50% 0%,#15402a 0%,#0c2a1b 55%,#07160e 100%);
+       min-height:100vh;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;line-height:1.7}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 70px}
+  header{text-align:center;padding:22px 0 10px}
+  .logo{font-size:40px}
+  h1{font-size:26px;color:var(--gold);margin:10px 0 4px;letter-spacing:1px}
+  .sub{font-size:13px;color:rgba(255,255,255,.5);font-family:ui-monospace,Menlo,Consolas,monospace;letter-spacing:1px}
+  .card{background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:20px 22px;margin:18px 0}
+  h2{font-size:18px;color:var(--gold);margin:0 0 12px;border-bottom:1px solid rgba(201,168,76,.25);padding-bottom:8px}
+  h3{font-size:15px;color:#fff;margin:18px 0 6px}
+  p,li{font-size:15px;color:rgba(255,255,255,.82)}
+  ol,ul{padding-left:22px}
+  li{margin:6px 0}
+  code{background:rgba(0,0,0,.35);padding:2px 7px;border-radius:5px;font-family:ui-monospace,Menlo,Consolas,monospace;
+       font-size:13px;color:var(--gold)}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.09);vertical-align:top}
+  th{color:var(--gold2);font-size:12px;letter-spacing:.5px;text-transform:uppercase;font-family:ui-monospace,monospace}
+  input{width:100%;padding:13px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.18);
+        background:rgba(0,0,0,.3);color:#fff;font-size:15px;font-family:ui-monospace,Menlo,Consolas,monospace}
+  button{width:100%;margin-top:12px;padding:14px;border:none;border-radius:10px;cursor:pointer;
+         background:linear-gradient(160deg,#c0392b,#a02a1f);color:#fff;font-size:16px;font-weight:700;
+         font-family:Georgia,serif;letter-spacing:.5px}
+  button:disabled{opacity:.55;cursor:not-allowed}
+  .note{background:rgba(201,168,76,.09);border:1px solid rgba(201,168,76,.3);border-radius:10px;
+        padding:13px 15px;font-size:14px;margin:14px 0}
+  .warn{background:rgba(192,57,43,.12);border-color:rgba(231,76,60,.4)}
+  .ok{background:rgba(34,197,94,.12);border-color:rgba(74,222,128,.4)}
+  #result{display:none;margin-top:16px}
+  a{color:var(--gold)}
+  footer{text-align:center;font-size:12.5px;color:rgba(255,255,255,.4);margin-top:34px;line-height:1.9}
+  .lang{text-align:center;margin-bottom:6px;font-size:13px}
+  .lang a{cursor:pointer;text-decoration:underline}
+  [lang-en]{display:none}
+  body.en [lang-tr]{display:none}
+  body.en [lang-en]{display:block}
+  body.en li[lang-en],body.en td[lang-en],body.en span[lang-en]{display:table-cell}
+</style>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">🃏</div>
+    <h1>Hesap ve Veri Silme</h1>
+    <div class="sub">YANIK ONLINE KART OYUNU · KRERSN STUDIO</div>
+  </header>
+
+  <div class="lang">
+    <a onclick="document.body.classList.remove('en')">Türkçe</a> ·
+    <a onclick="document.body.classList.add('en')">English</a>
+  </div>
+
+  <!-- ŞART 1: Uygulama ve geliştirici adına açık atıf -->
+  <div class="card">
+    <h2>Bu sayfa hangi uygulama için?</h2>
+    <p lang-tr>
+      Bu sayfa, <strong>Krersn Studio</strong> tarafından geliştirilen
+      <strong>Yanık Online Kart Oyunu</strong> (paket adı: <code>com.yanik.online</code>)
+      uygulaması içindir. Aşağıdaki adımlarla, oyunda size ait verilerin silinmesini
+      talep edebilirsiniz.
+    </p>
+    <p lang-en>
+      This page is for <strong>Yanık Online Kart Oyunu</strong>
+      (package: <code>com.yanik.online</code>), developed by <strong>Krersn Studio</strong>.
+      Use the steps below to request deletion of your data.
+    </p>
+    <p style="font-size:14px;color:rgba(255,255,255,.6)">
+      <strong lang-tr>İletişim:</strong><strong lang-en>Contact:</strong>
+      <a href="mailto:troyunci@gmail.com">troyunci@gmail.com</a>
+    </p>
+  </div>
+
+  <!-- ŞART 2: Silme adımları belirgin şekilde -->
+  <div class="card">
+    <h2 lang-tr>Verilerinizi nasıl silersiniz?</h2>
+    <h2 lang-en>How to delete your data</h2>
+
+    <h3 lang-tr>Yol 1 — Oyun içinden (en hızlı, anında silinir)</h3>
+    <h3 lang-en>Option 1 — In the app (fastest, instant)</h3>
+    <ol lang-tr>
+      <li>Oyunu açın.</li>
+      <li><strong>Ayarlar</strong> (⚙️) bölümüne girin.</li>
+      <li><strong>Gizlilik ve Verilerim</strong> satırına dokunun.</li>
+      <li><strong>Verilerimi Sil</strong> düğmesine basın ve onaylayın.</li>
+      <li>Verileriniz anında ve kalıcı olarak silinir.</li>
+    </ol>
+    <ol lang-en>
+      <li>Open the game.</li>
+      <li>Go to <strong>Settings</strong> (⚙️).</li>
+      <li>Tap <strong>Privacy &amp; My Data</strong>.</li>
+      <li>Tap <strong>Delete My Data</strong> and confirm.</li>
+      <li>Your data is deleted immediately and permanently.</li>
+    </ol>
+
+    <h3 lang-tr>Yol 2 — Bu sayfadan (uygulamayı sildiyseniz)</h3>
+    <h3 lang-en>Option 2 — From this page (if you uninstalled the app)</h3>
+    <p lang-tr>
+      Oyunumuzda hesap veya şifre yoktur. Kimliğiniz, cihazınızın kendi ürettiği
+      <strong>Oyuncu Kimliği</strong>dir. Bu kimliği oyunda
+      <strong>Ayarlar &gt; Gizlilik ve Verilerim</strong> ekranında görebilir ve kopyalayabilirsiniz.
+      Aşağıya yapıştırıp gönderin:
+    </p>
+    <p lang-en>
+      Our game has no accounts or passwords. Your identifier is the
+      <strong>Player ID</strong> generated on your device. You can view and copy it in
+      <strong>Settings &gt; Privacy &amp; My Data</strong>. Paste it below:
+    </p>
+
+    <div class="note warn">
+      <span lang-tr><strong>⚠️ Uygulamayı zaten sildiyseniz</strong> ve Oyuncu Kimliğinizi
+      kaydetmediyseniz, kimliğinizi bulmamız mümkün değildir (kimliği yalnızca sizin cihazınız
+      bilir, bizde ada veya e-postaya bağlı bir kayıt yoktur). Bu durumda
+      <a href="mailto:troyunci@gmail.com">troyunci@gmail.com</a> adresine yazın; kullandığınız
+      oyuncu adı ve yaklaşık son oynama tarihiyle kaydınızı bulmaya çalışalım.</span>
+      <span lang-en><strong>⚠️ If you already uninstalled the app</strong> and didn't save your
+      Player ID, we cannot look it up (only your device knows it — we hold no records tied to a
+      name or email). Please email <a href="mailto:troyunci@gmail.com">troyunci@gmail.com</a>
+      with your in-game nickname and approximate last play date.</span>
+    </div>
+
+    <label for="uid" style="font-size:13px;color:rgba(255,255,255,.6);display:block;margin-bottom:6px">
+      <span lang-tr>Oyuncu Kimliği (Player ID)</span><span lang-en>Player ID</span>
+    </label>
+    <input id="uid" placeholder="örn. 3f7a29c4-1b8e-4d0a-9c22-7e51ab30d9f4" autocomplete="off" spellcheck="false">
+    <button id="btn" onclick="submitDeletion()">
+      <span lang-tr>Verilerimi Kalıcı Olarak Sil</span><span lang-en>Permanently Delete My Data</span>
+    </button>
+    <div id="result"></div>
+  </div>
+
+  <!-- ŞART 3: Silinen ve saklanan veri türleri + saklama süreleri -->
+  <div class="card">
+    <h2 lang-tr>Hangi veriler silinir, hangileri saklanır?</h2>
+    <h2 lang-en>What is deleted and what is retained</h2>
+
+    <h3 lang-tr>Silinen veriler (anında, kalıcı)</h3>
+    <h3 lang-en>Deleted immediately and permanently</h3>
+    <table>
+      <tr><th lang-tr>Veri türü</th><th lang-en>Data type</th>
+          <th lang-tr>Açıklama</th><th lang-en>Description</th></tr>
+      <tr><td lang-tr>Oyuncu Kimliği ve takma ad</td><td lang-en>Player ID and nickname</td>
+          <td lang-tr>Sunucudaki kaydınız tamamen kaldırılır</td><td lang-en>Your server record is fully removed</td></tr>
+      <tr><td lang-tr>Arkadaş listesi</td><td lang-en>Friends list</td>
+          <td lang-tr>Hem sizden hem arkadaşlarınızın listesinden silinir</td><td lang-en>Removed from your list and your friends' lists</td></tr>
+      <tr><td lang-tr>Bekleyen arkadaşlık istekleri</td><td lang-en>Pending friend requests</td>
+          <td lang-tr>Gönderilen ve alınan tüm istekler</td><td lang-en>All sent and received requests</td></tr>
+      <tr><td lang-tr>Özel mesaj geçmişi</td><td lang-en>Private message history</td>
+          <td lang-tr>Sizdeki ve karşı taraftaki kopyalar dahil</td><td lang-en>Including copies stored for the other party</td></tr>
+      <tr><td lang-tr>Engelleme listeniz</td><td lang-en>Your block list</td>
+          <td lang-tr>Engellediğiniz oyuncular kaydı</td><td lang-en>Record of players you blocked</td></tr>
+      <tr><td lang-tr>Cihazınızdaki yerel veriler</td><td lang-en>Local data on your device</td>
+          <td lang-tr>Jeton, istatistik, ayarlar — uygulamayı kaldırınca silinir</td><td lang-en>Chips, stats, settings — removed when you uninstall</td></tr>
+    </table>
+
+    <h3 lang-tr>Saklanan veriler ve süreleri</h3>
+    <h3 lang-en>Retained data and durations</h3>
+    <table>
+      <tr><th lang-tr>Veri türü</th><th lang-en>Data type</th>
+          <th lang-tr>Süre ve gerekçe</th><th lang-en>Duration and reason</th></tr>
+      <tr><td lang-tr>Hakkınızda açılmış şikayet kayıtları</td><td lang-en>Reports filed about you</td>
+          <td lang-tr><strong>Süresiz saklanır, ancak kimliğiniz anonimleştirilir</strong> (adınız ve kimliğiniz
+              "silinmiş" olarak değiştirilir). Gerekçe: başka kullanıcıların güvenlik kayıtlarıdır; silme hakkı,
+              üçüncü kişilerin güvenlik kayıtlarını yok etme hakkı vermez.</td>
+          <td lang-en><strong>Retained indefinitely but anonymised</strong> (your name and ID are replaced with
+              "deleted"). Reason: these are other users' safety records.</td></tr>
+      <tr><td lang-tr>Sunucu erişim/hata günlükleri</td><td lang-en>Server access/error logs</td>
+          <td lang-tr><strong>En fazla 30 gün</strong>, sonra otomatik silinir. Gerekçe: güvenlik ve hata teşhisi.</td>
+          <td lang-en><strong>Up to 30 days</strong>, then auto-deleted. Reason: security and diagnostics.</td></tr>
+      <tr><td lang-tr>Satın alma kayıtları (jeton alımı)</td><td lang-en>Purchase records (chip purchases)</td>
+          <td lang-tr><strong>Google Play tarafından tutulur</strong> — bizde ödeme veya kart bilgisi bulunmaz.
+              Fatura/vergi mevzuatı gereği Google'ın saklama sürelerine tabidir. İade talepleri için
+              Google Play Destek'e başvurun.</td>
+          <td lang-en><strong>Held by Google Play</strong> — we store no payment or card data. Subject to Google's
+              retention periods for tax/invoicing. For refunds, contact Google Play Support.</td></tr>
+      <tr><td lang-tr>Sesli sohbet</td><td lang-en>Voice chat</td>
+          <td lang-tr><strong>Hiç kaydedilmez.</strong> Ses gerçek zamanlı iletilir, saklanmaz — silinecek bir kayıt yoktur.</td>
+          <td lang-en><strong>Never recorded.</strong> Voice is transmitted in real time and not stored.</td></tr>
+      <tr><td lang-tr>Genel sohbet mesajları</td><td lang-en>Public chat messages</td>
+          <td lang-tr>Sunucu belleğinde <strong>en fazla son 100 mesaj</strong> tutulur ve sunucu her yeniden
+              başladığında sıfırlanır; kalıcı olarak saklanmaz.</td>
+          <td lang-en>Only the <strong>last 100 messages</strong> are kept in memory and cleared on every server restart.</td></tr>
+    </table>
+
+    <div class="note">
+      <span lang-tr><strong>Hesap silme hakkında:</strong> Oyunumuzda ayrı bir "hesap" yoktur —
+      giriş, şifre veya e-posta kaydı bulunmaz. Bu nedenle verilerinizi silmek, hesabınızı silmekle
+      aynı anlama gelir. Silme işleminden sonra oyunu tekrar açarsanız, tamamen yeni ve boş bir
+      oyuncu kimliğiyle sıfırdan başlarsınız.</span>
+      <span lang-en><strong>About account deletion:</strong> the game has no separate "account" — no login,
+      password or email. Deleting your data is therefore the same as deleting your account. If you open the
+      game again afterwards, you start fresh with a brand-new, empty player ID.</span>
+    </div>
+  </div>
+
+  <footer>
+    <strong>Krersn Studio</strong><br>
+    <a href="mailto:troyunci@gmail.com">troyunci@gmail.com</a><br>
+    <span lang-tr>Son güncelleme: 9 Ağustos 2026</span><span lang-en>Last updated: 9 August 2026</span>
+  </footer>
+</div>
+
+<script>
+// Sunucu adresi — oyun sunucunuzun genel adresi.
+// Bu sayfa krersnstudio.com'da barındırılıyor, silme isteği ise oyun
+// sunucusuna gidiyor; farklı alan adı olduğu için sunucuda CORS açık olmalı
+// (server.js zaten cors() kullanıyor).
+var API = "https://oyun.krersnstudio.com/api/data-deletion";
+
+function submitDeletion() {
+  var EN = document.body.classList.contains("en");
+  var uid = document.getElementById("uid").value.trim();
+  var box = document.getElementById("result");
+  var btn = document.getElementById("btn");
+
+  if (uid.length < 8) {
+    show("warn", EN ? "Please enter a valid Player ID." : "Lütfen geçerli bir Oyuncu Kimliği girin.");
+    return;
+  }
+  if (!confirm(EN
+      ? "This will permanently delete your data. This cannot be undone. Continue?"
+      : "Verileriniz kalıcı olarak silinecek. Bu işlem GERİ ALINAMAZ. Devam edilsin mi?")) return;
+
+  btn.disabled = true;
+  btn.textContent = EN ? "Deleting…" : "Siliniyor…";
+
+  fetch(API, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ uid: uid })
+  })
+  .then(function (r) { return r.json(); })
+  .then(function (d) {
+    btn.disabled = false;
+    btn.textContent = EN ? "Permanently Delete My Data" : "Verilerimi Kalıcı Olarak Sil";
+    if (d && d.ok) {
+      var det = d.deleted || {};
+      show("ok", (EN ? "✓ Done. " : "✓ Tamamlandı. ") + (d.message || "") +
+        (d.found ? (EN
+          ? (" Removed: profile, " + det.arkadaslar + " friends, " + det.sohbetler + " conversations.")
+          : (" Silinen: profil, " + det.arkadaslar + " arkadaş, " + det.sohbetler + " sohbet."))
+        : ""));
+    } else {
+      show("warn", (d && d.error) || (EN ? "Request failed." : "Talep başarısız oldu."));
+    }
+  })
+  .catch(function () {
+    btn.disabled = false;
+    btn.textContent = EN ? "Permanently Delete My Data" : "Verilerimi Kalıcı Olarak Sil";
+    show("warn", EN
+      ? "Could not reach the server. Please email troyunci@gmail.com and we'll delete it manually."
+      : "Sunucuya ulaşılamadı. Lütfen troyunci@gmail.com adresine yazın, talebinizi elle işleyelim.");
+  });
+
+  function show(cls, msg) {
+    box.className = "note " + cls;
+    box.style.display = "block";
+    box.textContent = msg;
+  }
+}
+</script>
+</body>
+</html>
