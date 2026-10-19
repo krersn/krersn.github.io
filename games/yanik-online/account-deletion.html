@@ -110,26 +110,26 @@
     <h3 lang-tr>Yol 2 — Bu sayfadan (uygulamayı sildiyseniz)</h3>
     <h3 lang-en>Option 2 — From this page (if you uninstalled the app)</h3>
     <p lang-tr>
-      Oyunumuzda hesap veya şifre yoktur. Kimliğiniz, cihazınızın kendi ürettiği
-      <strong>Oyuncu Kimliği</strong>dir. Bu kimliği oyunda
+      Oyunumuzda şifre veya e-posta kaydı yoktur. Hesabınız sunucumuzdaki
+      <strong>Oyuncu Kimliği</strong> ile tanınır. Bu kimliği oyunda
       <strong>Ayarlar &gt; Gizlilik ve Verilerim</strong> ekranında görebilir ve kopyalayabilirsiniz.
       Aşağıya yapıştırıp gönderin:
     </p>
     <p lang-en>
-      Our game has no accounts or passwords. Your identifier is the
-      <strong>Player ID</strong> generated on your device. You can view and copy it in
+      Our game stores no password or email. Your account is identified by the
+      <strong>Player ID</strong> on our server. You can view and copy it in
       <strong>Settings &gt; Privacy &amp; My Data</strong>. Paste it below:
     </p>
 
     <div class="note warn">
       <span lang-tr><strong>⚠️ Uygulamayı zaten sildiyseniz</strong> ve Oyuncu Kimliğinizi
-      kaydetmediyseniz, kimliğinizi bulmamız mümkün değildir (kimliği yalnızca sizin cihazınız
-      bilir, bizde ada veya e-postaya bağlı bir kayıt yoktur). Bu durumda
+      kaydetmediyseniz: oyunu yeniden yükleyip Google / Play Oyunlar hesabınızla ya da kurtarma
+      kodunuzla hesabınızı geri alabilir, ardından Yol 1 ile silebilirsiniz. Bu da mümkün değilse
       <a href="mailto:info@krersnstudio.com">info@krersnstudio.com</a> adresine yazın; kullandığınız
       oyuncu adı ve yaklaşık son oynama tarihiyle kaydınızı bulmaya çalışalım.</span>
       <span lang-en><strong>⚠️ If you already uninstalled the app</strong> and didn't save your
-      Player ID, we cannot look it up (only your device knows it — we hold no records tied to a
-      name or email). Please email <a href="mailto:info@krersnstudio.com">info@krersnstudio.com</a>
+      Player ID: reinstall the game and restore your account with your Google / Play Games account
+      or recovery code, then use Option 1. If that is not possible, email <a href="mailto:info@krersnstudio.com">info@krersnstudio.com</a>
       with your in-game nickname and approximate last play date.</span>
     </div>
 
@@ -163,6 +163,14 @@
           <td lang-tr>Sizdeki ve karşı taraftaki kopyalar dahil</td><td lang-en>Including copies stored for the other party</td></tr>
       <tr><td lang-tr>Engelleme listeniz</td><td lang-en>Your block list</td>
           <td lang-tr>Engellediğiniz oyuncular kaydı</td><td lang-en>Record of players you blocked</td></tr>
+      <tr><td lang-tr>Profil fotoğrafı, avatar ve kozmetikler</td><td lang-en>Profile photo, avatar and cosmetics</td>
+          <td lang-tr>Sunucudan silinir</td><td lang-en>Removed from the server</td></tr>
+      <tr><td lang-tr>İstatistikler, başarımlar, jeton/elmas bakiyesi</td><td lang-en>Statistics, achievements, chip/diamond balance</td>
+          <td lang-tr>Oyun ve galibiyet sayıları, sıralama, bakiye silinir</td><td lang-en>Game/win counts, rankings and balance are removed</td></tr>
+      <tr><td lang-tr>Genel sohbet ve sohbet odası mesajlarınız</td><td lang-en>Your public chat and chat room messages</td>
+          <td lang-tr>Silinir; sahibi olduğunuz sohbet odaları kapatılır</td><td lang-en>Deleted; chat rooms you own are closed</td></tr>
+      <tr><td lang-tr>Hesap bağlantıları</td><td lang-en>Account links</td>
+          <td lang-tr>Google / Play Oyunlar bağlantısı, kurtarma kodu ve cihaz anahtarları</td><td lang-en>Google / Play Games link, recovery code and device keys</td></tr>
       <tr><td lang-tr>Cihazınızdaki yerel veriler</td><td lang-en>Local data on your device</td>
           <td lang-tr>Jeton, istatistik, ayarlar — uygulamayı kaldırınca silinir</td><td lang-en>Chips, stats, settings — removed when you uninstall</td></tr>
     </table>
@@ -181,6 +189,17 @@
       <tr><td lang-tr>Sunucu erişim/hata günlükleri</td><td lang-en>Server access/error logs</td>
           <td lang-tr><strong>En fazla 30 gün</strong>, sonra otomatik silinir. Gerekçe: güvenlik ve hata teşhisi.</td>
           <td lang-en><strong>Up to 30 days</strong>, then auto-deleted. Reason: security and diagnostics.</td></tr>
+      <tr><td lang-tr>Jeton/elmas işlem kayıtları</td><td lang-en>Chip/diamond transaction records</td>
+          <td lang-tr>Hile ve dolandırıcılık önleme ile muhasebe amacıyla gerekli süre boyunca saklanabilir; hesabınızla eşleştirilemeyecek biçimde tutulur.</td>
+          <td lang-en>May be kept as long as needed for anti-cheat, fraud prevention and accounting, in a form no longer linked to your profile.</td></tr>
+      <tr><td lang-tr>Uzaklaştırma (ban) kaydı</td><td lang-en>Suspension (ban) record</td>
+          <td lang-tr>Hesabınız kurallara aykırılık nedeniyle uzaklaştırıldıysa, ban kaydı ve <strong>cihaz kimliğinizin şifrelenmiş özeti</strong>
+              ban süresi boyunca (kalıcı banda süresiz) saklanır. Gerekçe: güvenlik ve dolandırıcılık önleme — aksi halde banlı kişi hesabını silip hemen geri dönebilirdi.</td>
+          <td lang-en>If your account was suspended for rule violations, the ban record and a <strong>hashed digest of your device identifier</strong>
+              are kept for the ban period (indefinitely for permanent bans). Reason: security and fraud prevention.</td></tr>
+      <tr><td lang-tr>Veritabanı yedekleri</td><td lang-en>Database backups</td>
+          <td lang-tr><strong>En fazla 7 gün</strong>, sonra otomatik silinir.</td>
+          <td lang-en><strong>Up to 7 days</strong>, then auto-deleted.</td></tr>
       <tr><td lang-tr>Satın alma kayıtları (jeton alımı)</td><td lang-en>Purchase records (chip purchases)</td>
           <td lang-tr><strong>Google Play tarafından tutulur</strong> — bizde ödeme veya kart bilgisi bulunmaz.
               Fatura/vergi mevzuatı gereği Google'ın saklama sürelerine tabidir. İade talepleri için
@@ -191,26 +210,25 @@
           <td lang-tr><strong>Hiç kaydedilmez.</strong> Ses gerçek zamanlı iletilir, saklanmaz — silinecek bir kayıt yoktur.</td>
           <td lang-en><strong>Never recorded.</strong> Voice is transmitted in real time and not stored.</td></tr>
       <tr><td lang-tr>Genel sohbet mesajları</td><td lang-en>Public chat messages</td>
-          <td lang-tr>Sunucu belleğinde <strong>en fazla son 100 mesaj</strong> tutulur ve sunucu her yeniden
-              başladığında sıfırlanır; kalıcı olarak saklanmaz.</td>
-          <td lang-en>Only the <strong>last 100 messages</strong> are kept in memory and cleared on every server restart.</td></tr>
+          <td lang-tr>Başkalarının mesajları dahil genel sohbet en fazla <strong>30 gün</strong> saklanır; sizin mesajlarınız hesap silinince hemen silinir.</td>
+          <td lang-en>Public chat is kept for up to <strong>30 days</strong>; your own messages are deleted immediately when you delete your account.</td></tr>
     </table>
 
     <div class="note">
-      <span lang-tr><strong>Hesap silme hakkında:</strong> Oyunumuzda ayrı bir "hesap" yoktur —
-      giriş, şifre veya e-posta kaydı bulunmaz. Bu nedenle verilerinizi silmek, hesabınızı silmekle
-      aynı anlama gelir. Silme işleminden sonra oyunu tekrar açarsanız, tamamen yeni ve boş bir
-      oyuncu kimliğiyle sıfırdan başlarsınız.</span>
-      <span lang-en><strong>About account deletion:</strong> the game has no separate "account" — no login,
-      password or email. Deleting your data is therefore the same as deleting your account. If you open the
-      game again afterwards, you start fresh with a brand-new, empty player ID.</span>
+      <span lang-tr><strong>Hesap silme hakkında:</strong> "Verilerimi Sil" işlemi hesabınızı ve ona bağlı
+      verileri birlikte siler; ayrı bir hesap silme adımı yoktur. Silme işleminden sonra oyunu tekrar
+      açarsanız, tamamen yeni ve boş bir hesapla sıfırdan başlarsınız. Satın aldığınız jetonlar ve
+      elmaslar da silinir ve geri getirilemez.</span>
+      <span lang-en><strong>About account deletion:</strong> "Delete My Data" deletes your account and all
+      linked data together; there is no separate account deletion step. If you open the game again afterwards,
+      you start fresh with a new, empty account. Purchased chips and diamonds are also deleted and cannot be restored.</span>
     </div>
   </div>
 
   <footer>
     <strong>Krersn Studio</strong><br>
     <a href="mailto:info@krersnstudio.com">info@krersnstudio.com</a><br>
-    <span lang-tr>Son güncelleme: 9 Ağustos 2026</span><span lang-en>Last updated: 9 August 2026</span>
+    <span lang-tr>Son güncelleme: 20 Ekim 2026</span><span lang-en>Last updated: 20 October 2026</span>
   </footer>
 </div>
 
