@@ -69,6 +69,7 @@
       <span>krersn <small>studio</small></span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
+        <a class="nl nl-soon" href="#coming-soon">Coming soon</a>
         <a class="nl" href="#games">Games</a>
         <a class="nl" href="#workshop">Workshop</a>
         <a class="nl" href="#exhibit">Channels & NFT</a>
@@ -110,6 +111,38 @@
   </section>
 
   <div class="marquee" aria-hidden="true"><div class="marquee-track"><span class="">Card Games</span><span class="s">♠</span><span class="">Motion Graphics</span><span class="s">♥</span><span class="">Promo Videos</span><span class="s">♦</span><span class="">Visual Tools</span><span class="s">♣</span><span class="">Digital Art</span><span class="s">♠</span><span class="">YouTube</span><span class="s">♥</span><span class="">NFT</span><span class="s">♦</span><span class="">Card Games</span><span class="s">♠</span><span class="">Motion Graphics</span><span class="s">♥</span><span class="">Promo Videos</span><span class="s">♦</span><span class="">Visual Tools</span><span class="s">♣</span><span class="">Digital Art</span><span class="s">♠</span><span class="">YouTube</span><span class="s">♥</span><span class="">NFT</span><span class="s">♦</span></div></div>
+
+
+  <!-- ÇÖP ADAM — YAKINDA (STEAM) -->
+  <section class="sec soon-sec" id="coming-soon">
+    <div class="wrap">
+      <div class="soon reveal">
+        <div class="soon-txt">
+          <div class="sec-no">§ 00 — Coming soon · Steam</div>
+          <span class="soon-badge"><i></i>New game</span>
+          <h2 class="soon-title">ÇÖP ADAM</h2>
+          <div class="soon-sub">a psychological horror game</div>
+          <p class="soon-p">A sleepless illustrator who lost his father to dementia — and is starting to forget his face — redraws the stick man his father drew for him as a child, night after night. Every new line brings back a memory. And the <b>Eraser</b> that watches him.</p>
+          <blockquote class="soon-q">“If the one who made you forgets you, do you still exist?”</blockquote>
+          <div class="tags"><span class="tag">Psychological Horror</span><span class="tag">Puzzle-Platformer</span><span class="tag">Story</span><span class="tag">PC · Steam</span><span class="tag age">18+</span></div>
+          <div class="chips"><span class="chip"><b>5 cm</b>tall hero</span><span class="chip"><b>Godot 4</b>engine</span><span class="chip"><b>PC</b>Steam</span></div>
+          <div class="store-row">
+            <span class="gp soon-steam" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.96 9.2l5.36 2.2a2.8 2.8 0 0 1 1.6-.5h.15l2.38-3.45v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.4 2.43v.13a2.83 2.83 0 0 1-5.6.56L2.4 14.8A10 10 0 1 0 12 2zM8.28 17.17l-1.23-.5a2.12 2.12 0 1 0 1.16-2.9l1.27.52a1.56 1.56 0 1 1-1.2 2.88zm9.3-7.8a2.51 2.51 0 1 0-2.51 2.51 2.51 2.51 0 0 0 2.5-2.51zm-4.39 0a1.88 1.88 0 1 1 1.88 1.88 1.88 1.88 0 0 1-1.88-1.88z"/></svg><span class="l"><small>Steam</small><b>Coming soon</b></span></span>
+            <a class="dl-mini" href="https://www.youtube.com/watch?v=bivz3ekr2sc" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 30 21" aria-hidden="true"><rect width="30" height="21" rx="6" fill="#ff0000"/><path d="M12 6v9l8-4.5z" fill="#fff"/></svg>Watch the trailer on YouTube</a>
+          </div>
+          <p class="note">Steam store page and wishlist link coming here very soon. (Game language: Turkish.)</p>
+        </div>
+        <div class="soon-media">
+          <div class="soon-phone">
+            <button type="button" class="soon-play" data-yt="bivz3ekr2sc" aria-label="Play trailer">
+              <img src="/assets/img/games/cop-adam-poster.webp" alt="ÇÖP ADAM" width="540" height="960" loading="lazy">
+              <span class="soon-pbtn" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#fff" d="M8 5v14l11-7z"/></svg></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- PLAY STORE OYUNLARIM -->
   <section class="sec" id="games">
@@ -400,6 +433,18 @@
     en.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } });
   }, { rootMargin: '0px 0px -8% 0px' });
   els.forEach(function (e) { io.observe(e); });
+})();
+
+/* ÇÖP ADAM fragmanı: tıklayınca YouTube yüklenir (sayfa hızlı kalır) */
+(function () {
+  document.querySelectorAll('.soon-play').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + b.getAttribute('data-yt') + '?autoplay=1&rel=0&playsinline=1';
+      f.title = 'ÇÖP ADAM'; f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
+      b.replaceWith(f);
+    });
+  });
 })();
 
 </script>
